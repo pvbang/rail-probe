@@ -1,0 +1,40 @@
+{
+  "name": "@pvbang/rail-probe",
+  "version": "1.0.0",
+  "description": "Probe revenue/API rails and classify their true liveness (auth-blocked vs capability-absent). Distinguishes 401/403 (alive, needs auth) from 404/refused (rail absent).",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "rail-probe": "bin/cli.js"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/probe.test.js"
+  },
+  "keywords": [
+    "rail",
+    "probe",
+    "liveness",
+    "http",
+    "api",
+    "healthcheck",
+    "auth",
+    "diagnostics"
+  ],
+  "author": "Phan Van Bang <phanvanbang.dev@gmail.com> (https://github.com/pvbang)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvbang/rail-probe.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
